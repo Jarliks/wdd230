@@ -1,0 +1,38 @@
+main{
+    width: 50%;
+    margin: auto;
+}
+
+.nameplate{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-template-rows: 150px;
+    column-gap: 0px;
+    box-shadow: grey 2px 2px 20px;
+}
+
+.profile{
+    width: 150px;
+    justify-self: left;
+}
+
+.name{
+    justify-self: center;
+    align-self: center;
+}
+
+h2{
+    text-shadow: grey 2px 2px 10px;
+}
+
+footer{
+    background-color: beige;
+    height: 150px;
+    text-align: center;
+    box-shadow: grey 2px 2px 20px;
+}
+
+footer p{
+    padding-top: 20px;
+}
