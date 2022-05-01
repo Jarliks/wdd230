@@ -1,0 +1,11 @@
+@media only screen and (min-width: 64em){
+
+    .grid-parent{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    #block3{
+        grid-column: auto;
+    }
+}
