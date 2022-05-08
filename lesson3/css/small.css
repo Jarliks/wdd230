@@ -1,0 +1,133 @@
+header{
+    background-color: #7BA1B3;
+}
+
+nav{
+    align-self: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+ul{
+    padding: 0px;
+}
+
+li{
+    display: inline;
+    text-align: center;
+    padding: 0.3em;
+    background-color: #BB804D;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+}
+
+nav a:visited{
+    color: black;
+}
+
+nav li:hover{
+    color: #BB804D;
+    background-color: white;
+}
+
+.color-swatch{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+main{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-grid{
+    display: grid;
+    justify-content: center;
+    background-color: #F7FCFE;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.persona img{
+    max-width: 50%;
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Sanchez', serif;
+}
+
+.header-font{
+    font-family: 'Sanchez', serif;
+}
+
+.p-font{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 0px;
+    padding: 0.5em;
+}
+
+h2{
+    text-align: left;
+}
+
+h3{
+    text-align: left;
+}
+
+.filled{
+    color: white;
+    background-color: #4D843B;
+    padding:0.75em;
+}
+
+.color-title{
+    text-align: center;
+}
+
+.color-one{
+    background-color: #BB804D;
+}
+
+.color-two{
+    background-color: #F7FCFE;
+}
+
+.color-three{
+    background-color: #4D843B;
+}
+
+.color-four{
+    background-color: #7BA1B3;
+}
+
+.scenarios li{
+    display: block;
+    background-color: transparent;
+}
+
+footer{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #BB804D;
+}
+
+footer p{
+    margin: 0px;
+}
