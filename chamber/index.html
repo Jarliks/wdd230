@@ -16,20 +16,47 @@
   </head>
   <main>
     <header>
-      <h1>Header</h1>
+      <div class="title">
+        <img src="images/cactus.png" alt="logo" />
+        <h1>Gilbert</h1>
+        <h2>Chamber of Commerce</h2>
+      </div>
+      <a href="#" onclick="toggleMenu()" class="mobile-menu">&#9776;</a>
       <nav>
         <ul class="navigation">
-          <li>
-            <a href="#" onclick="toggleMenu()">&#9776;</a>
-          </li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">home 2</a></li>
-          <li><a href="#">home 3</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <body></body>
+    <body>
+      <div class="date">
+        <span>day </span><span>month </span><span>year</span>
+      </div>
+      <div class="grid-box">
+        <section id="call-to-action">
+          Hero with site name and Call to action
+        </section>
+        <section id="event">Event</section>
+        <section id="weather">Weather</section>
+        <section id="news-release">News</section>
+        <section class="spotlight-grid">
+          <section id="spotlight-1">Spotlight 1</section>
+          <section id="spotlight-2">Spotlight 2</section>
+          <section id="spotlight-3">Spotlight 3</section>
+        </section>
+        <section id="join">Join</section>
+      </div>
+    </body>
     <footer>
+      <a href="https://www.facebook.com/"
+        ><img src="images/facebook.png" alt="facebook"
+      /></a>
+      <a href="https://www.linkedin.com/"
+        ><img src="images/linkedin.png" alt="linked-in"
+      /></a>
       <p>&copy;<span id="year"></span> | Alec Mateski | Arizona</p>
       <p>Last Updated: <span id="timestamp"></span></p>
     </footer>

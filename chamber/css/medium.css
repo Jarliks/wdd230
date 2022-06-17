@@ -4,7 +4,7 @@
         display: inline;
     }
 
-    .navigation li:first-child {
+    .mobile-menu {
         display: none;
     }
 
