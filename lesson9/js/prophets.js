@@ -31,7 +31,7 @@ function displayProphets(prophet) {
     card.append(birthplace);
     card.append(portrait);
     card.append(length);
-    h2.innerHTML = `${prophet.name} ${prophet.lastName}`;
+    h2.innerHTML = `${prophet.name} ${prophet.lastname}`;
     birthdate.innerHTML = `Date of birth: ${prophet.birthdate}.`;
     birthplace.innerHTML = `Place of Birth: ${prophet.birthplace}.`;
     length.innerHTML = `Served as a prophet for ${prophet.length} years.`;
