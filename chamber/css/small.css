@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+:root{
+    --prime-orange: #C7783B;
+    --compliment-orange: #A66741;
+    --shadows-orange: #7B553C;
+    --prime-blue: #9DCCD4;
+    --compliment-white: #D4DCDC;
+    --not-black: #1D1D1D;
+}
+
+p, h1, h2, h3, h4, h5, h6, span, a{
+    font-family: 'Convergence', sans-serif;
+    color: var(--not-black);
+    margin: 0px;
+}
+
+main{
+    background-color: var(--compliment-white);
+}
+
+.navigation {
+    background-color: var(--compliment-orange);
+}
+
 .navigation li {
     display: none;
 }
@@ -5,34 +30,36 @@
 .mobile-menu {
     display: block;
     padding: 0.5em;
-    color: black;
-    background-color: lightgray;
-    border: 1px solid gray;
-    margin:auto;
+    background-color: var(--shadows-orange);
+    border: 1px solid  var(--not-black);
+    color: var(--not-black);
+    margin: auto;
     grid-column: 3/4;
     text-decoration: none;
     border-radius: 5px;
     margin-right: 30px;
+    justify-self: end;
 }
 
 .mobile-menu:hover {
-    background-color: gray;
-    border-color: black;
+    color: var(--shadows-orange);
+    background-color: var(--compliment-orange);
+    border-color:var(--shadows-orange);
 }
 
 .responsive li {
     display: block;
 }
 
-header {
-    background-color: orange;
+.header-box {
+    background-color: var(--prime-orange);
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1em;
 }
 
-header div {
+.header-box div {
     display: grid;
     grid-template-columns: 100px 200px;
     grid-template-rows: 50px 50px;
@@ -65,68 +92,252 @@ ul {
 }
 
 li {
-    padding: 0px;
+    padding: 0.5em;
     margin: 0px;
 }
 
 nav {
-    grid-column: 1/4;
+    background-color: var(--prime-orange);
 }
 
 nav a {
-    color: black;
     text-decoration: none;
     margin: 0.5em 1em;
 }
 
-nav a:hover {
-    background-color: aqua;
+nav li:hover {
+    background-color: var(--prime-blue);
 }
 
 footer {
-    background-color: orange;
+    background-color: var(--compliment-orange);
     text-align: center;
     padding: 1em;
+    margin-top: 3em;
+    border-top: solid 5px var(--shadows-orange);
 }
 
 footer img {
+    width: 100px;
+}
+
+.footer-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer-box div {
+    margin: auto;
+}
+
+.extra-info img {
     width: 32px;
 }
 
 footer p {
     margin: 0px;
+    color: var(--not-black);
 }
 
 .date {
-    width: 80%;
-    background-color: aqua;
+    width: 100%;
+    background-color: var(--prime-blue);
     margin: auto;
     text-align: center;
     padding: 0.5em;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-top: 0.25em;
     margin-bottom: 0.25em;
-    border: 1px solid blue;
     border-radius: 10px;
+    color: var(--not-black);
+    box-shadow: 1px 1px 4px var(--not-black);
+}
+
+#banner {
+    display: none;
 }
 
 .grid-box {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0.25em;
-    grid-gap: 0.25em;
+    grid-gap: 0.5em;
 }
 
 section {
     min-height: 10rem;
-    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px var(--not-black);
 }
 
-.spotlight-grid{
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 1fr;
+    gap: 0.5em;
+    justify-content: center;
+    padding: 1em;
+}
+
+#call-to-action {
+    background-image: url(/chamber/images/gilbert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 0.5em;
+    justify-content: center;
+}
+
+#call-to-action h3 {
+    color: var(--compliment-white);
+    text-shadow: 1px 1px 3px var(--not-black);
+    font-size: 2em;
+    margin: auto;
+    background-color: var(--prime-orange);
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+#call-to-action span {
+    padding: .5em 2em;
+    font-size: 1.5em;
+    background-color: var(--compliment-orange);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+#call-to-action a {
+    grid-row: 3/4;
+    justify-self: center;
+    text-decoration: none;
+}
+
+#call-to-action span:hover {
+    background-color: var(--prime-blue);
+}
+
+#event {
+    background-color: var(--prime-blue);
+}
+
+#event h4 {
+    font-size: 1.5em;
+    justify-self: center;
+    text-align: center;
+}
+
+#event p {
+    justify-self: center;
+    text-align: center;
+}
+
+#weather {
+    background-color: var(--prime-blue);
+    grid-template-columns: auto;
+}
+
+#weather h4 {
+    font-size: 1.5em;
+    justify-self: center;
+    text-align: center;
+}
+
+#weather p {
+    justify-self: center;
+    text-align: center;
+}
+
+#weather img {
+    max-width: 100px;
+    justify-self: center;
+    margin: -10px;
+}
+
+#news-release {
+    background-color: var(--compliment-orange);
+}
+
+#news-release h4 {
+    font-size: 1.5em;
+    justify-self: start;
+    text-align: left;
+}
+
+#news-release p {
+    justify-self: stretch;
+    text-align: left;
+}
+
+.spotlight-grid {
+    background-color: var(--compliment-orange);
     display: grid;
     grid-gap: 1em;
     padding: 1em;
 }
 
+.spotlight-grid .content-box{
+    grid-template-rows: 0.25fr 1fr;
+}
+
+#spotlight-1 {
+    background-color: var(--prime-orange);
+}
+
+#spotlight-2 {
+    background-color: var(--prime-orange);
+}
+
 #spotlight-3 {
     display: none;
+    background-color: var(--prime-orange);
+}
+
+.spotlight h4 {
+    font-size: 1.5em;
+    justify-self: center;
+    text-align: center;
+}
+
+.spotlight p {
+    justify-self: center;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    color: var(--not-black)
+}
+
+#join {
+    background-color: var(--prime-blue);
+}
+
+#join p {
+    justify-self: center;
+    text-align: center;
+}
+
+#join span {
+    padding: .5em 2em;
+    font-size: 1.5em;
+    background-color: var(--compliment-orange);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+#join a {
+    justify-self: center;
+    text-decoration: none;
+    margin: auto;
+}
+
+#join span:hover {
+    background-color: var(--prime-orange);
 }
