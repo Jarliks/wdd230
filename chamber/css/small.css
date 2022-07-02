@@ -262,6 +262,7 @@ section {
 
 #news-release {
     background-color: var(--compliment-orange);
+    grid-template-rows: auto;
 }
 
 #news-release h4 {
