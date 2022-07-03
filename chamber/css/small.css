@@ -404,15 +404,76 @@ hr {
 form {
     width: 90%;
     margin: auto;
+    background-color: var(--compliment-orange);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
 }
 
+form h3, .contact-info h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    background-color: var(--prime-blue);
+    padding: 0.25em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
 
+fieldset {
+    border: none;
+    box-shadow: 1px 1px 3px var(--not-black);
+    border-radius: 10px;
+    background-color: var(--prime-orange);
+    color: var(--not-black);
+    display: grid;
+}
+
+.mid-field {
+    margin-top: 1em;
+}
+
+legend {
+    border-radius: 10px;
+    color: var(--not-black);
+    background-color: var(--prime-blue);
+    padding: 0.5em;
+    font-family: 'Convergence', sans-serif;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+label {
+    color: var(--not-black);
+    font-family: 'Convergence', sans-serif;
+}
+
+input, textarea {
+    border:solid 1px var(--shadows-orange);
+    color: var(--not-black);
+    margin-top: 0.25em;
+    padding: 0.25em;
+}
 
 .thank-you-box {
     display: grid;
     grid-gap: 1em;
     background-color: var(--prime-blue);
     margin-top: 2em;
+}
+
+.submit-form {
+    padding: 1em 2em;
+    font-family: 'Convergence', sans-serif;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: var(--prime-orange);
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+.submit-form:hover {
+    background-color: var(--prime-blue);
 }
 
 .thank-you {
@@ -436,4 +497,17 @@ form {
 
 .thank-you-box a {
     text-decoration: none;
+}
+
+.contact-info {
+    display: grid;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--prime-orange);
+    width: 90%;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
 }
