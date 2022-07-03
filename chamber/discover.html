@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover page for Chamber of Commerce Assignment for Alec Mateski in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <title>Discover - Gilbert AZ Chamber of Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/cactus.png" />
+  </head>
+  <main>
+    <header>
+      <div class="header-box">
+        <div class="title">
+          <a href="index.html"><img src="images/cactus.png" alt="logo" /></a>
+          <h1>Gilbert</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+        <a href="#" onclick="toggleMenu()" class="mobile-menu">&#9776;</a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <a href="index.html"><li>Home</li></a>
+          <a href="discover.html"><li>Discover</li></a>
+          <a href="directory.html"><li>Directory</li></a>
+          <a href="join.html"><li>Join</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </nav>
+      <div class="date">
+        <span id="current-date"></span><br />
+        <span id="banner">
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
+        </span>
+      </div>
+    </header>
+    <body>
+      <h3 id="page-title">Discover!</h3>
+      <div id="discover-grid">
+        <div class="discover-image">
+          <img
+            src=""
+            alt="gilbert-water-tower"
+            data-src="images/gilbert-disc-1.jpg"
+          />
+          <p>Gilbert, AZ</p>
+        </div>
+        <div class="discover-image">
+          <img
+            src=""
+            alt="gilbert-square"
+            data-src="images/gilbert-disc-2.jpg"
+          />
+          <p>Central Gilbert</p>
+        </div>
+        <div class="discover-image">
+          <img
+            src=""
+            alt="gilbert-museum"
+            data-src="images/gilbert-disc-3.jpg"
+          />
+          <p>Gilbert Historical Museum</p>
+        </div>
+        <div class="discover-image">
+          <img
+            src=""
+            alt="gilbert-lds-temple"
+            data-src="images/gilbert-disc-4.jpg"
+          />
+          <p>Gilbert LDS Temple</p>
+        </div>
+        <div class="discover-image">
+          <img src="" alt="gilbert-park" data-src="images/gilbert-disc-5.jpg" />
+          <p>Gilbert Regional Park</p>
+        </div>
+        <div class="demographic-info">
+          <h3>Demographics</h3>
+          <p>
+            Population Estimate: 273,136<br />
+            Veterans: 11,801<br />
+            Households: 79,714<br />
+            High School Graduates: 96%<br />
+            Bachelor's Degree: 45%<br />
+            Median Household Income: $99,154<br />
+            All Employer Firms: 4,535
+          </p>
+          <p>
+            Powered by
+            <a href="https://www.census.gov/quickfacts/gilberttownarizona"
+              >census.gov</a
+            >
+          </p>
+        </div>
+      </div>
+      <div id="visit-info">
+        <p>Days since last page view: <span id="visits"></span></p>
+      </div>
+    </body>
+    <footer>
+      <div class="footer-box">
+        <div>
+          <img src="images/cactus.png" alt="logo-footer" />
+        </div>
+        <div>
+          <p><strong>Address</strong></p>
+          <p>555 Desert rd.</p>
+          <p>Gilbert, Arizona</p>
+          <br />
+          <p><strong>Contact Information</strong></p>
+          <p>info@Gilbertchamber.org</p>
+          <p>555-555-5555</p>
+        </div>
+        <div class="extra-info">
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.linkedin.com/"
+            ><img src="images/linkedin.png" alt="linked-in"
+          /></a>
+          <p>&copy;<span id="year"></span> | Alec Mateski | Arizona</p>
+          <p>Last Updated: <span id="timestamp"></span></p>
+          <br />
+          <p>
+            Weather information powered by
+            <a href="https://openweathermap.org/">OpenWeatherAPI</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </main>
+</html>

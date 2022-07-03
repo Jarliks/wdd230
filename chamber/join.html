@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join page for Chamber of Commerce Assignment for Alec Mateski in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <title>Join - Gilbert AZ Chamber of Commerce</title>
+    <link rel="icon" type="image/x-icon" href="images/cactus.png" />
+  </head>
+  <main>
+    <header>
+      <div class="header-box">
+        <div class="title">
+          <a href="index.html"><img src="images/cactus.png" alt="logo" /></a>
+          <h1>Gilbert</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+        <a href="#" onclick="toggleMenu()" class="mobile-menu">&#9776;</a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <a href="index.html"><li>Home</li></a>
+          <a href="discover.html"><li>Discover</li></a>
+          <a href="directory.html"><li>Directory</li></a>
+          <a href="join.html"><li>Join</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </nav>
+      <div class="date">
+        <span id="current-date"></span><br />
+        <span id="banner">
+          🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00
+          p.m.
+        </span>
+      </div>
+    </header>
+    <body>
+      <form method="get" action="thankyou.html">
+        <fieldset>
+          <legend>Application Information</legend>
+          <label class="top" for="first-name">
+            First Name*<br />
+            <input
+              id="first-name"
+              type="text"
+              required=""
+              placeholder="Enter your first name"
+            />
+          </label>
+          <label class="top" for="last-name">
+            <br />Last Name*<br />
+            <input
+              id="last-name"
+              type="text"
+              required=""
+              placeholder="Enter your last name"
+            />
+          </label>
+          <label class="top" for="buisness">
+            <br />Name of Business*<br />
+            <input
+              id="business"
+              type="text"
+              required=""
+              placeholder="Company name"
+            />
+          </label>
+          <label class="top" for="email">
+            <br />Email*<br />
+            <input
+              id="email"
+              type="text"
+              required=""
+              placeholder="123@email.com"
+            />
+          </label>
+          <label class="top" for="phone">
+            <br />Phone Number*<br />
+            <input
+              id="phone"
+              type="text"
+              required=""
+              placeholder="123-456-7890"
+            />
+          </label>
+          <label class="top" for="title">
+            <br />Position at Company<br />
+            <input id="title" type="text" required="" placeholder="" />
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Membership (Choose one)</legend>
+          Membership
+          <label class="sbs">
+            <br /><input type="radio" name="selected-membership" value="np" />
+            NP Membership
+          </label>
+          <label class="sbs">
+            <br /><input type="radio" name="selected-membership" value="np" />
+            Bronze Membership
+          </label>
+          <label class="sbs">
+            <br /><input type="radio" name="selected-membership" value="np" />
+            Silver Membership
+          </label>
+          <label class="sbs">
+            <br /><input type="radio" name="selected-membership" value="np" />
+            Gold Membership
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Business Description</legend>
+          <textarea
+            id="text-area"
+            name="business-description"
+            rows="10"
+            cols="42"
+            maxlength="500"
+          ></textarea>
+        </fieldset>
+        <input
+          id="form-timestamp"
+          type="hidden"
+          name="date-and-time"
+          value="currentDate"
+        />
+        <input class="submit-form" type="submit" value="Join!" />
+      </form>
+    </body>
+    <footer>
+      <div class="footer-box">
+        <div>
+          <img src="images/cactus.png" alt="logo-footer" />
+        </div>
+        <div>
+          <p><strong>Address</strong></p>
+          <p>555 Desert rd.</p>
+          <p>Gilbert, Arizona</p>
+          <br />
+          <p><strong>Contact Information</strong></p>
+          <p>info@Gilbertchamber.org</p>
+          <p>555-555-5555</p>
+        </div>
+        <div class="extra-info">
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook.png" alt="facebook"
+          /></a>
+          <a href="https://www.linkedin.com/"
+            ><img src="images/linkedin.png" alt="linked-in"
+          /></a>
+          <p>&copy;<span id="year"></span> | Alec Mateski | Arizona</p>
+          <p>Last Updated: <span id="timestamp"></span></p>
+          <br />
+          <p>
+            Weather information powered by
+            <a href="https://openweathermap.org/">OpenWeatherAPI</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </main>
+</html>

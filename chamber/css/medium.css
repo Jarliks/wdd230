@@ -52,4 +52,29 @@
     .footer-box{
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* Discover Page ------------------------------------------------------------------- */
+
+    #discover-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #discover-grid img:hover{
+        box-shadow: 3px 3px 5px var(--prime-blue);
+        transition-duration: 0.5s;
+    }
+
+    #discover-grid img{
+        box-shadow: 3px 3px 5px var(--shadows-orange);
+    }
+
+    /* forms ------------------------------------ */
+    form {
+        width: 80%;
+    }
+
+    .thank-you-box {
+        margin-bottom: 100px;
+    }
+    
 }

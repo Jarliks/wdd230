@@ -39,8 +39,8 @@ function displayResults(weatherData) {
   let temp = weatherData.main.temp;
   let wind = weatherData.wind.speed;
   let chill = windChillValue(wind, temp);
-  if (temp - chill > 0){
-    windChill.textContent = chill;
+  if (temp <= 50 && wind >= 3){
+    windChill.textContent = `${chill}  &deg;F`;
   } else {
     windChill.textContent = "N/A";
   }

@@ -15,6 +15,10 @@ p, h1, h2, h3, h4, h5, h6, span, a{
     margin: 0px;
 }
 
+hr {
+    color: var(--not-black);
+}
+
 main{
     background-color: var(--compliment-white);
 }
@@ -341,4 +345,95 @@ hr {
 
 #join span:hover {
     background-color: var(--prime-orange);
+}
+
+/* discover page -----------------------------------------------------------------------------*/
+#page-title {
+    font-size: 2em;
+    text-align: center;
+    padding: 1em;
+}
+
+#discover-grid {
+    width: 95%;
+    display: grid;
+    margin: auto;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr;
+}
+
+#discover-grid img {
+    width: 100%;
+}
+
+#discover-grid p {
+    margin: auto;
+    text-align: center;
+}
+
+.demographic-info{
+    background-color: var(--prime-blue);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.demographic-info h3 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 0.5em;
+    color: var(--compliment-white);
+    text-shadow: 1px 1px 3px var(--not-black);
+}
+
+.demographic-info p {
+    color: var(--compliment-white);
+    text-shadow: 1px 1px 3px var(--not-black);
+}
+
+[data-src] {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+#visit-info p {
+    text-align: right;
+    padding: 1em;
+}
+
+/* forms ------------------------------------ */
+form {
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.thank-you-box {
+    display: grid;
+    grid-gap: 1em;
+    background-color: var(--prime-blue);
+    margin-top: 2em;
+}
+
+.thank-you {
+    text-align: center;
+    margin: auto;
+}
+
+.return-home {
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--compliment-orange);
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+
+.return-home:hover {
+    background-color: var(--prime-orange);
+}
+
+.thank-you-box a {
+    text-decoration: none;
 }
