@@ -410,7 +410,7 @@ form {
     box-shadow: 1px 1px 3px var(--not-black);
 }
 
-form h3, .contact-info h3 {
+form h3, .contact-info h3, .directory-title {
     font-size: 2em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -510,4 +510,112 @@ input, textarea {
     padding: 1em;
     border-radius: 10px;
     box-shadow: 1px 1px 3px var(--not-black);
+}
+
+/* Directory ------------------------------------------------------------ */
+
+
+
+article section {
+    box-shadow: none;
+    min-height: 1em;
+    border-radius: 0px;
+}
+
+article img {
+    max-width: 32px;
+}
+
+article p, article a {
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--shadows-orange);
+    border: solid 2px var(--shadows-orange);
+    margin-top: 1em;
+}
+
+.list section {
+    display: grid;
+	justify-content: center;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--prime-orange);
+    padding: 0.5em;
+}
+
+.list section .website {
+    display: none;
+}
+
+.list section img {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 60%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.grid section {
+    display: grid;
+    justify-content: center;
+    background-color: var(--prime-orange);
+    padding: 0.5em;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+.grid section img {
+    display: block;
+    justify-self: center;
+    padding: 0.5em;
+}
+
+.directory-title {
+    margin-top: 0.5em !important;
+}
+
+.directory-menu {
+    padding-top: 1em;
+    justify-content: center;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 30% 1fr 1fr 30%;
+    grid-gap: 0.5em;
+}
+
+#grid {
+    grid-column: 2/3;
+    background-color: var(--prime-orange);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+#grid:hover {
+    background-color: var(--prime-blue);
+}
+
+#list {
+    grid-column: 3/4;
+    background-color: var(--prime-orange);
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em;
+    box-shadow: 1px 1px 3px var(--not-black);
+}
+
+#list:hover {
+    background-color: var(--prime-blue);
 }

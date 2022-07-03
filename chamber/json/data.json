@@ -1,0 +1,85 @@
+{
+    "companies": 
+    [
+        {
+            "name": "Sand Company",
+            "image": "images/company-icon.png",
+            "address": "123 Sand Rd.",
+            "phone": "555-123-4567",
+            "website": "www.sandcompany.com",
+            "membership": "Gold Membership"
+        },
+    
+        {
+            "name": "Cactus Farms",
+            "image": "images/company-icon.png",
+            "address": "245 Pointy Rd.",
+            "phone": "555-321-4657",
+            "website": "www.cactusfarm.com",
+            "membership": "Gold Membership"
+        },
+    
+        {
+            "name": "Sky Company",
+            "image": "images/company-icon.png",
+            "address": "53 Cloud Rd.",
+            "phone": "555-937-2946",
+            "website": "www.skycompany.com",
+            "membership": "Gold Membership"
+        },
+    
+        {
+            "name": "Vintage Mining Equipment",
+            "image": "images/company-icon.png",
+            "address": "85 Gold Rd.",
+            "phone": "555-274-4876",
+            "website": "www.vintageminingcompany.com",
+            "membership": "Gold Membership"
+        },
+    
+        {
+            "name": "Sad Clown Cars",
+            "image": "images/company-icon.png",
+            "address": "43 Sad Rd.",
+            "phone": "555-455-9234",
+            "website": "www.sadclowncompany.com",
+            "membership": "Silver Membership"
+        },
+    
+        {
+            "name": "Dusty Computers",
+            "image": "images/company-icon.png",
+            "address": "102 Fan Rd.",
+            "phone": "555-101-1101",
+            "website": "www.dustycomputercompany.com",
+            "membership": "Silver Membership"
+        },
+    
+        {
+            "name": "Crusty Computers",
+            "image": "images/company-icon.png",
+            "address": "103 Fan Rd.",
+            "phone": "555-010-0010",
+            "website": "www.crustycomputercompany.com",
+            "membership": "Silver Membership"
+        },
+    
+        {
+            "name": "Dan's Targets",
+            "image": "images/company-icon.png",
+            "address": "80 bullseye Rd.",
+            "phone": "555-743-4095",
+            "website": "www.targetsforsale.com",
+            "membership": "Bronze Membership"
+        },
+    
+        {
+            "name": "Buy Water",
+            "image": "images/company-icon.png",
+            "address": "200 Wet Rd.",
+            "phone": "555-245-1183",
+            "website": "www.wheretogetwaterinthedesert.com",
+            "membership": "NP Membership"
+        }
+    ]
+}

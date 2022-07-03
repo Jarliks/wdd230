@@ -80,4 +80,28 @@
     .contact-info {
         width: 80%;
     }
+
+    /* Directory --------------------------------- */
+    
+    .list section {
+        grid-template-columns: 1fr 1fr 1fr 20%;
+    }
+
+    .list section .website {
+        display: block;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    
+    .directory-title {
+        width: 80%;
+        margin: auto;
+    }
+
+    .directory-menu {
+        width: 80%;
+    }
 }

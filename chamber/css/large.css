@@ -104,4 +104,32 @@
     .contact-info {
         width: 50%;
     }
+
+    /* Directory --------------------------------- */
+
+    article {
+        width: 60%;
+        margin: auto;
+    }
+
+    .list {
+        box-shadow: 1px 1px 3px var(--not-black);
+    }
+    
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    
+    .grid section img {
+        max-width: 48px;
+    }
+
+    .directory-title {
+        width: 60%;
+    }
+
+    .directory-menu {
+        width: 60%;
+    }
 }
